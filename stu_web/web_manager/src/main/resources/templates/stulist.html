@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>clslist</title>
+</head>
+<body>
+    <h1>学生列表</h1>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>学生姓名</td>
+            <td>年龄</td>
+            <td>所属班级</td>
+        </tr>
+        <tr th:each="stu : ${stus}">
+            <td th:text="${stu.id}">id</td>
+            <td th:text="${stu.sname}">班级名称
+            <td th:text="${stu.age}">班级名称</td>
+            <td th:text="${stu.cls.cname}">班级总人数</td>
+        </tr>
+
+    </table>
+</body>
+</html>
