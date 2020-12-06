@@ -26,7 +26,7 @@ public class ClsServiceImpl implements IClsService {
     }
 
     @Override
-    public Classes queryById(Integer id) {
-        return clsMapper.selectById(id);
+    public Classes queryById(Integer idd) {
+        return clsMapper.selectById(idd);
     }
 }
